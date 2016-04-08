@@ -1,0 +1,162 @@
+<div class="row">
+<article class="type-system-rounded about article">
+	<h2><i class="fa fa-user animate"></i><span>About</span></h2>
+    <ul>
+        <li data-grade-up>UX Professional</li>
+        <li>Designer</li>
+        <li>Developer</li>
+        <li>Technologist</li>
+        <li data-grade-normal>DIY Enthusiast</li>
+        <li data-grade-normal>Biker</li>
+        <li>Cuber</li>
+        <li data-grade-normal>Cyclist</li>
+        <li>Runner</li>
+        <li>Fitness Geek</li>
+        <li>SF &amp; Fantasy Buff</li>
+    </ul>
+</article>
+<article class="type-system-rounded design article">
+	<h2><i class="fa fa-magic animate"></i><span>Design</span></h2>
+    <ul>
+        <li>Requirement Gathering</li>
+        <li data-grade-up>Workflow Analysis</li>
+        <li>Storyboarding</li>
+        <li data-grade-up>Wireframes</li>
+        <li>Interaction Design</li>
+        <li>Component Design</li>
+        <li data-grade-up>Usability</li>
+        <li>Web</li>
+        <li>Mobile</li>
+        <li data-grade-normal>Heuristic Evaluation</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded coding article">
+	<h2><i class="fa fa-braces animate"></i><span>Coding</span></h2>
+    <ul>
+        <li data-grade-up>Javascript</li>
+        <li>NodeJS</li>
+        <li data-grade-normal>Ruby</li>
+        <li data-grade-normal>Golang</li>
+        <li>PHP</li>
+        <li>Perl</li>
+        <li data-grade-normal>Python</li>
+        <li>Java</li>
+        <li>C/C++/C#</li>
+    </ul>
+</article>
+<article class="type-system-rounded authoring article">
+	<h2><i class="fa fa-code animate"></i><span>Authoring and Libraries</span></h2>
+    <ul>
+        <li data-grade-up>HTML</li>
+        <li data-grade-up>CSS/SCSS</li>
+        <li>jQuery</li>
+        <li data-grade-normal>Sencha Touch</li>
+        <li>AngularJS</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded tools article">
+	<h2><i class="fa fa-wrench animate"></i><span>Tools</span></h2>
+    <ul>
+        <li>Balsamiq Mockups</li>
+        <li data-grade-up>Brackets</li>
+        <li data-grade-up>Inkscape</li>
+        <li>Gimp</li>
+        <li>HTML/CSS/JS</li>
+    </ul>
+</article>
+<article class="type-system-rounded project-types article">
+	<h2><i class="fa fa-check-square animate"></i><span>Projects</span></h2>
+    <ul>
+        <li data-grade-up>Dashboards</li>
+        <li>Productivity Apps</li>
+        <li data-grade-up>Workflow Management Tools</li>
+        <li>Finance and Accounting Applications</li>
+        <li data-grade-up>Enterprise Systems</li>
+        <li data-grade-up>Human Capital</li>
+        <li>Intranets</li>
+        <li>Websites</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded platforms article">
+	<h2><i class="fa fa-server animate"></i><span>Platforms</span></h2>
+    <ul>
+        <li>Java Web</li>
+        <li>JFC/Swing</li>
+        <li>SharePoint</li>
+        <li>PHP/Perl/MySQL</li>
+    </ul>
+</article>
+<article class="type-system-rounded  management article">
+	<h2><i class="fa fa-users animate"></i><span>Management</span></h2>
+    <ul>
+        <li data-grade-up>Design Evangelization</li>
+        <li>Team Management</li>
+        <li>Project Tracking</li>
+        <li data-grade-up>Recruiting</li>
+        <li>Performance Evaluation</li>
+        <li>Headcount Planning</li>
+        <li>Standards Definition</li>
+        <li data-grade-up>Technology Direction</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded companies article">
+	<h2><i class="fa fa-building animate"></i><span>Companies</span></h2>
+    <ul>
+        <li data-grade-up>D.&nbsp;E.&nbsp;Shaw &mdash; 8.5y</li>
+        <li>Microsoft &mdash; 6m</li>
+        <li>AmberPoint &mdash; 1y</li>
+        <li data-grade-up>Veritas &mdash; 4.5y</li>
+    </ul>
+</article>
+<article class="type-system-rounded  management article">
+	<h2><i class="fa fa-graduation-cap animate"></i><span>Education</span></h2>
+    <ul>
+        <li>Master of Computer Science &mdash; University of Pune</li>
+        <li>Bachelor of Computer Science &mdash; University of Pune</li>
+    </ul>
+</article>
+</div>
+
+<div class="row">
+<article class="type-system-rounded acheievements article">
+	<h2><i class="fa fa-trophy animate"></i><span>Achievements</span></h2>
+    <ul>
+        <li>Sub-30s Cube Solve</li>
+        <li>Hyd-Pune-Hyd Solo Motorcycle Ride</li>
+        <li>Extreme Weight Loss</li>
+        <li>Gave Up Smoking</li>
+    </ul>
+</article>
+<article class="type-system-rounded  certification article">
+	<h2><i class="fa fa-star animate"></i><span>Certification</span></h2>
+    <ul>
+        <li data-grade-up>Awesome!</li>
+    </ul>
+</article>
+</div>
+
+<!--
+<div class="row">
+<article class="type-system-rounded fitness article">
+	<h2><i class="fa fa-heartbeat animate"></i><span>Fitness</span></h2>
+	<p>Over the last year and some, I've become something of a fitness enthusiast. I've dropped 14kgs (and counting) and am quite active. I jog, cycle, swim, weight train and play basketball regularly. I also frequently cycle to work. Insights I've gained along the way are in my <a href="javascript:jQuery.noop();">fitness related blog posts</a>.</p>
+</article>
+
+<article class="type-system-rounded books article">
+	<h2><i class="fa fa-book animate"></i><span>Books</span></h2>
+	<p>I'm an enthusiastic SF and Fantasy fan. I get through a lot of books in these genres. Have a look at my <a href="http://www.goodreads.com/review/list/11797400-manjit-karve">bookshelves on Goodreads</a>.</p>
+</article>
+</div>
+-->
