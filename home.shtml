@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta charset='utf8' />
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto:100' rel='stylesheet' type='text/css'>
+	<link rel="shortcut icon" href="/assets/images/favicon.ico" />
+	<style type="text/css">
+		<!--#include virtual="assets/css/home.css" -->
+	</style>
+	<title>Manjit Karve | Home</title>
+	<script type="text/javascript" language="javascript">
+	  var icons=['pencil', 'wrench', 'beaker', 'magic', 'heart', 'eq', 'logo'];
+		var currentIcon=1;
+		window.onload=function(){
+			window.setInterval(function(){
+				document.getElementById("icons-container").setAttribute("current-icon", icons[currentIcon++%icons.length]);
+			}, 2000);
+		};
+		function noop(){};
+	</script>
+</head>
+<body>
+	<div id="page-container">
+		<main page-name='<!--#echo  var="DOCUMENT_NAME" -->'>
+			<div id="icons-container" current-icon="pencil">
+				<div class="icon pencil"><i class="home-icon icon-pencil"></i></div>
+				<div class="icon wrench"><i class="home-icon icon-wrench"></i></div>
+				<div class="icon beaker"><i class="home-icon icon-beaker"></i></div>
+				<div class="icon magic"><i class="home-icon icon-magic"></i></div>
+				<div class="icon heart"><i class="home-icon icon-heart"></i></div>
+				<div class="icon eq"><i class="home-icon icon-eq"></i></div>
+				<div class="icon logo"><i class="home-icon icon-manjit-logo"></i></div>
+			</div>
+			<div id="message">Coming Soon!</div>
+		</main>
+
+	</div>
+</body>
+</html>
