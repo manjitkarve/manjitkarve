@@ -1,11 +1,1 @@
-<div id="breadcrumb-container">
-	<ul>
-		<li><a href="/index.shtml">Home</a></li>
-	</ul>
-</div>
-<div id="content-area">
-	<section id="featured-post">
-		<!--#include virtual="blog/posts/the-new-me.shtml" -->
-	</section>
-	<section id="me"></section>
-</div>
+<div id="call-to-action"></div>

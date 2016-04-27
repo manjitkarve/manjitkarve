@@ -5,9 +5,10 @@
 	<title>Manjit Karve | Home</title>
 </head>
 <body>
-	<div id="pageContainer">
+	<!--#include virtual="includes/bg.shtml" -->
+	<div id="page-container" page-name='<!--#echo  var="DOCUMENT_NAME" -->'>
 		<!--#include virtual="includes/header.shtml"-->
-		<main page-name='<!--#echo  var="DOCUMENT_NAME" -->'>
+		<main>
 			<!--#include virtual="includes/index.shtml"-->
 		</main>
 		<!--#include virtual="includes/footer.shtml"-->

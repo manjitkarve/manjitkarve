@@ -1,0 +1,24 @@
+header{
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  font-size: 2rem;
+  @include link-color($primary-color-text);
+  ul, li{list-style-type: none;}
+  a{
+    text-decoration: none;
+    font-variant: small-caps;
+    display: block;
+    letter-spacing: 3px;
+    &::first-letter{
+      color: $accent-color;
+      vertical-align: -1px;
+    }
+    &:hover{
+      color: #fff;
+      &::first-letter{
+        color: $primary-color;
+      }
+    }
+  }
+}

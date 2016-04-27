@@ -1,0 +1,5 @@
+<div id="backgrounds">
+  <div id="bg-radial-gradient"></div>
+  <div id="bg-sticks" class="pattern"></div>
+  <div id="bg-fills" class="pattern"></div>
+</div>

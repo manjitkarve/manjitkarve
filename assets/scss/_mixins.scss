@@ -1,0 +1,14 @@
+@import "css3-mixins";
+
+@mixin fill-space {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+@mixin link-color($color){
+  a, a:link, a:hover, a:visited, a:active{
+    color: $color;
+  }
+}
