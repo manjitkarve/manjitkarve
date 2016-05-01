@@ -43,3 +43,6 @@ Temporary Items
 .apdisk
 /.sass-cache/
 /__MACOSX/
+/ide/
+/.ide/
+/ICEcoder/
