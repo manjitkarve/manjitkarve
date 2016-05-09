@@ -7,7 +7,9 @@
 <body>
 	<!--#include virtual="includes/bg.shtml" -->
 	<div id="page-container" page-name='<!--#echo  var="DOCUMENT_NAME" -->'>
-		<!--#include virtual="includes/header.shtml"-->
+		<header>
+			<!--#include virtual="includes/nav.shtml"-->
+		</header>
 		<main>
 			<!--#include virtual="includes/index.shtml"-->
 		</main>
