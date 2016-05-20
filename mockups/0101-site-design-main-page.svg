@@ -16,7 +16,7 @@
    viewBox="0 0 1680 1080"
    height="1080"
    width="1680"
-   sodipodi:docname="01-site-design-main-page.svg"
+   sodipodi:docname="0101-site-design-main-page.svg"
    inkscape:export-filename="/home/manjit/github/manjitkarve/mockups/site-design.png"
    inkscape:export-xdpi="90"
    inkscape:export-ydpi="90">
@@ -256,16 +256,16 @@
      inkscape:window-maximized="1"
      inkscape:window-y="24"
      inkscape:window-x="0"
-     inkscape:window-height="1013"
-     inkscape:window-width="1920"
+     inkscape:window-height="701"
+     inkscape:window-width="1366"
      width="1680px"
      units="px"
      showgrid="false"
-     inkscape:current-layer="layer2"
+     inkscape:current-layer="layer9"
      inkscape:document-units="px"
-     inkscape:cy="647.04184"
-     inkscape:cx="184.20795"
-     inkscape:zoom="0.31660982"
+     inkscape:cy="573.29729"
+     inkscape:cx="834.68175"
+     inkscape:zoom="0.5290842"
      inkscape:pageshadow="2"
      inkscape:pageopacity="0.0"
      borderopacity="1.0"
@@ -717,7 +717,8 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="background"
-     style="display:inline">
+     style="display:inline"
+     sodipodi:insensitive="true">
     <g
        inkscape:label="background 0"
        inkscape:groupmode="layer"
@@ -1284,7 +1285,7 @@
        inkscape:label="central-menu-text">
       <text
          xml:space="preserve"
-         style="display:inline;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:41.99711609px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0a73;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
+         style="display:inline;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#ff0a73;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          x="1200.1831"
          y="756.23035"
          id="text7197"
@@ -1298,7 +1299,7 @@
          id="text7201"
          y="844.63965"
          x="1203.5848"
-         style="display:inline;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:41.99711609px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="display:inline;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          xml:space="preserve"><tspan
            y="844.63965"
            x="1203.5848"
@@ -1306,7 +1307,7 @@
            sodipodi:role="line">Team Consulting</tspan></text>
       <text
          xml:space="preserve"
-         style="display:inline;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:41.99711609px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="display:inline;font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          x="1203.2069"
          y="800.435"
          id="text7205"
@@ -1326,7 +1327,7 @@
          id="text4334"
          y="234.02565"
          x="1100.9908"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:49.65724564px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          xml:space="preserve"><tspan
            y="234.02565"
            x="1100.9908"
@@ -1334,7 +1335,7 @@
            sodipodi:role="line">Portfolio</tspan></text>
       <text
          xml:space="preserve"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:49.65724564px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          x="1236.9908"
          y="459.02563"
          id="text4344"
@@ -1348,7 +1349,7 @@
          id="text4358"
          y="876.26825"
          x="486.09134"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:49.65724564px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;"
          xml:space="preserve"><tspan
            y="876.26825"
            x="486.09134"
@@ -1402,16 +1403,16 @@
        transform="matrix(0.11067938,0,0,0.11067938,646.23156,812.2315)" />
     <text
        xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:49.65724564px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="482.55731"
+       style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#03a9f4;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       x="350.55731"
        y="349.99472"
        id="text4362"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4364"
-         x="482.55731"
+         x="350.55731"
          y="349.99472"
-         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:49.65750122px;line-height:125%;font-family:Lato;-inkscape-font-specification:'Lato, Light';text-align:end;writing-mode:lr-tb;text-anchor:end">About</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:300;font-stretch:normal;font-size:46.37374878px;line-height:125%;font-family:'Open Sans';-inkscape-font-specification:'Open Sans, Light';text-align:start;writing-mode:lr-tb;text-anchor:start">About</tspan></text>
   </g>
   <g
      inkscape:groupmode="layer"
