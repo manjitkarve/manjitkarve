@@ -1,12 +1,13 @@
 <!doctype html>
-<html>
+<!--#include virtual="includes/settings.shtml" -->
+<html page-name='<!--#echo  var="pageName" -->'>
 <head>
 	<!--#include virtual="includes/head.shtml"-->
 	<title>Manjit Karve | Home</title>
 </head>
-<body>
+<body page-name='<!--#echo  var="pageName" -->'>
 	<!--#include virtual="includes/bg.shtml" -->
-	<div id="page-container" page-name='<!--#echo  var="DOCUMENT_NAME" -->'>
+	<div id="page-container" page-name='<!--#echo  var="pageName" -->'>
 		<header>
 			<!--#include virtual="includes/nav.shtml"-->
 		</header>
