@@ -1,11 +1,17 @@
-<nav role="navigation" class="right">
-    <label class="navigation-menu-button" for="nav-trigger"><i class="fa fa-bars"></i></label>
-    <input type="checkbox" id="nav-trigger" style="display: none;" checked/>
-    <ul class="navigation-menu show">
-        <li class="nav-link"><a href="/">Home</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Resume</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Portfolio</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Blog</a></li>
-        <li class="nav-link"><a href="javascript:void(0)">Services</a></li>
-    </ul>
+<nav>
+  <ul class="navigation-menu show">
+    <li class="nav-link" id="home-page"><a href="/">Home</a></li>
+    <li class="nav-link" id="portfoilio-page"><a href="javascript:void(0)">Portfolio</a></li>
+    <li class="nav-link" id="resume-page"><a href="javascript:void(0)">Resume</a></li>
+    <li class="nav-link" id="about-page"><a href="javascript:void(0)">About</a></li>
+    <li class="nav-link" id="contact-menu"><a href="javascript:void(0)">Contact</a>
+      <ul>
+        <li class="nav-link ext-link" id="contact-type-linkedin"><a target="_blank" href="https://www.linkedin.com/in/manjitkarve">LinkedIn</a></li>
+        <li class="nav-link ext-link" id="contact-type-twitter"><a target="_blank" href="https://www.twitter/com/laaltoofan">@laaltoofan</a></li>
+        <li class="nav-link ext-link" id="contact-type-github"><a target="_blank" href="https://github.com/manjitkarve">GitHub</a></li>
+        <li class="nav-link ext-link" id="contact-type-email"><a target="_blank" href="mailto:contact@manjitkarve.com">contact@manjitkarve.com</a></li>
+      </ul>
+    </li>
+    <li class="nav-link" id="blog-page"><a href="javascript:void(0)">Blog</a></li>
+  </ul>
 </nav>
