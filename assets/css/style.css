@@ -368,12 +368,12 @@ body {
 }
 /* line 46, ../scss/_page.scss */
 #backgrounds #bg-sticks {
-  background-image: url("/assets/images/hexagon-pattern-bg-sticks.svg");
+  background-image: url("/assets/images/hexagon-pattern-bg-sticks-optimized.svg");
   opacity: 0.5;
 }
 /* line 50, ../scss/_page.scss */
 #backgrounds #bg-fills {
-  background-image: url("/assets/images/hexagon-pattern-bg-fills.svg");
+  background-image: url("/assets/images/hexagon-pattern-bg-fills-optimized.svg");
   opacity: 0.1;
 }
 /* line 54, ../scss/_page.scss */
