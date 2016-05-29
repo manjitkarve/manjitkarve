@@ -1,6 +1,7 @@
-@import "heartbeat-animation";
+@import "hex-bg";
 
-html, body, #page-container, #backgrounds{
+
+html, body, #page-container{
   @include fill-space;
   box-sizing: content-box;
 }
@@ -9,6 +10,7 @@ body{
   font-size: 4pt;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
+
 #page-container{
   margin: 0 auto;
   display: flex;
@@ -19,39 +21,5 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-  }
-}
-#call-to-action{
-  @extend .manjit-logo;
-  @include animation(heartbeat 1300ms ease 0s infinite normal);
-  font-size: 10rem;
-  color: $accent-color;
-  &:hover{
-    @include pause-animation;
-  }
-}
-
-#backgrounds{
-  position: fixed;
-  top: 0px; right: 0px; bottom: 0px; left: 0px; z-index: -1;
-  background-color: #01425f;
-  &>div{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-  }
-  #bg-radial-gradient{
-    @include background(radial-gradient(farthest-corner at 50% 20%, rgba(255, 255, 255, 0.19), rgb(0, 0, 0) 70%));
-  }
-  #bg-sticks{
-    background-image: url('/assets/images/hexagon-pattern-bg-sticks-optimized.svg');
-    opacity: 0.5;
-  }
-  #bg-fills{
-    background-image: url('/assets/images/hexagon-pattern-bg-fills-optimized.svg');
-    opacity: 0.1;
-  }
-  .pattern{
-    background-repeat: repeat;
   }
 }
