@@ -1,0 +1,23 @@
+nav .navigation-menu{
+  span.text{display: block;}
+  span.icon{
+    display: none;
+
+    .bg-target{
+      fill: $primary-main;
+    }
+    .menu-icon:hover .bg-target{
+      fill: $secondary-main;
+    }
+  }
+}
+
+[page-name=index] nav .navigation-menu{
+  span.text{
+    display: none;
+    &.only{
+      display: block;
+    }
+  }
+  span.icon{display: block;}
+}
