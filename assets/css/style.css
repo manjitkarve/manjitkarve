@@ -20,26 +20,45 @@ nav .navigation-menu span.text {
 nav .navigation-menu span.icon {
   display: none;
 }
-/* line 6, ../scss/_nav.scss */
-nav .navigation-menu span.icon .bg-target {
-  fill: #03A9F4;
-}
-/* line 9, ../scss/_nav.scss */
-nav .navigation-menu span.icon .menu-icon:hover .bg-target {
-  fill: #ff0a73;
-}
 
-/* line 16, ../scss/_nav.scss */
-[page-name=index] nav .navigation-menu span.text {
+/* line 10, ../scss/_nav.scss */
+[page-name=index] nav {
+  width: 100%;
+  height: 100%;
+}
+/* line 13, ../scss/_nav.scss */
+[page-name=index] nav ul, [page-name=index] nav li {
+  margin: 0;
+  padding: 0;
+}
+/* line 14, ../scss/_nav.scss */
+[page-name=index] nav > .navigation-menu {
+  position: relative;
+}
+/* line 15, ../scss/_nav.scss */
+[page-name=index] nav > .navigation-menu span.text {
   display: none;
 }
-/* line 18, ../scss/_nav.scss */
-[page-name=index] nav .navigation-menu span.text.only {
+/* line 17, ../scss/_nav.scss */
+[page-name=index] nav > .navigation-menu span.text.only {
   display: block;
 }
-/* line 22, ../scss/_nav.scss */
-[page-name=index] nav .navigation-menu span.icon {
+/* line 21, ../scss/_nav.scss */
+[page-name=index] nav > .navigation-menu span.icon {
   display: block;
+}
+/* line 24, ../scss/_nav.scss */
+[page-name=index] nav > .navigation-menu span.icon .bg-target {
+  fill: #03A9F4;
+}
+/* line 28, ../scss/_nav.scss */
+[page-name=index] nav > .navigation-menu span.icon .menu-icon:hover .bg-target, [page-name=index] nav > .navigation-menu span.icon #logo:hover .bg-target {
+  fill: #ff0a73;
+}
+/* line 34, ../scss/_nav.scss */
+[page-name=index] nav > .navigation-menu .nav-link a {
+  display: block;
+  position: absolute;
 }
 
 /* line 8, ../scss/_header.scss */
@@ -119,6 +138,7 @@ body {
 #page-container > main {
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
 }
 
 /* line 1, ../scss/_footer.scss */
