@@ -3,21 +3,37 @@ nav .navigation-menu{
   span.icon{
     display: none;
 
-    .bg-target{
-      fill: $primary-main;
-    }
-    .menu-icon:hover .bg-target{
-      fill: $secondary-main;
-    }
+
   }
 }
 
-[page-name=index] nav .navigation-menu{
-  span.text{
-    display: none;
-    &.only{
+[page-name=index] nav{
+  width: 100%;
+  height: 100%;
+  ul, li{margin: 0; padding: 0;}
+  &>.navigation-menu{
+    span.text{
+      display: none;
+      &.only{
+        display: block;
+      }
+    }
+    span.icon{
       display: block;
+
+      .bg-target{
+        fill: $primary-main;
+      }
+      .menu-icon:hover, #logo:hover{
+        .bg-target{
+          fill: $secondary-main;
+        }
+      }
+    }
+    position: relative;
+    .nav-link a{
+      display: block;
+      position: absolute;
     }
   }
-  span.icon{display: block;}
 }
