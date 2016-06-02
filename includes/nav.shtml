@@ -1,21 +1,114 @@
 <nav>
   <ul class="navigation-menu show">
     <li class="nav-link" id="home-page">
-      <a href="/">Home</a>
-      <ul class="navigation-menu show">
-        <li class="nav-link" id="portfoilio-page"><a href="javascript:void(0)">Portfolio</a></li>
-        <li class="nav-link" id="resume-page"><a href="javascript:void(0)">Resume</a></li>
-        <li class="nav-link" id="services-page"><a href="javascript:void(0)">Services</a></li>
-        <li class="nav-link" id="about-page"><a href="javascript:void(0)">About</a></li>
-        <li class="nav-link" id="contact-menu"><a href="javascript:void(0)">Contact</a>
-          <ul>
-            <li class="nav-link ext-link" id="contact-type-linkedin"><a target="_blank" href="https://www.linkedin.com/in/manjitkarve">LinkedIn</a></li>
-            <li class="nav-link ext-link" id="contact-type-twitter"><a target="_blank" href="https://www.twitter/com/laaltoofan">@laaltoofan</a></li>
-            <li class="nav-link ext-link" id="contact-type-github"><a target="_blank" href="https://github.com/manjitkarve">GitHub</a></li>
-            <li class="nav-link ext-link" id="contact-type-email"><a target="_blank" href="mailto:contact@manjitkarve.com">contact@manjitkarve.com</a></li>
+      <a href="/">
+        <span class="text">Home</span>
+        <span class="icon">
+          <!--#include virtual='/assets/images/logo-optimized.svg' -->
+        </span>
+      </a>
+      <ul class="navigation-menu show group" id="group1">
+        <li class="nav-link" id="portfoilio-page">
+          <a href="javascript:void(0)">
+            <span class="text">Portfolio</span>
+            <span class="icon">
+              <!--#include virtual='/assets/images/portfolio-optimized.svg' -->
+            </span>
+          </a>
+        </li>
+        <li class="nav-link" id="resume-page">
+          <a href="javascript:void(0)">
+            <span class="text">Resume</span>
+            <span class="icon">
+              <!--#include virtual='/assets/images/resume-optimized.svg' -->
+            </span>
+          </a>
+        </li>
+        <li class="nav-link" id="services-page">
+          <a href="javascript:void(0)">
+            <span class="text">Services</span>
+            <span class="icon">
+              <!--#include virtual='/assets/images/services-optimized.svg' -->
+            </span>
+          </a>
+          <ul class="submenu" id="services-menu">
+            <li class="nav-link" id="ux-design-page">
+              <a href="javascript:void(0)">
+                <span class="text only">UX Design</span>
+              </a>
+            </li>
+            <li class="nav-link" id="website-design-page">
+              <a href="javascript:void(0)">
+                <span class="text only">Website Design</span>
+              </a>
+            </li>
+            <li class="nav-link" id="team-consulting-page">
+              <a href="javascript:void(0)">
+                <span class="text only">Team Consulting</span>
+              </a>
+            </li>
           </ul>
         </li>
-        <li class="nav-link" id="blog-page"><a href="javascript:void(0)">Blog</a></li>
+      </ul>
+      <ul class="navigation-menu show group" id="group2">
+        <li class="nav-link" id="about-page">
+          <a href="javascript:void(0)">
+            <span class="text">About</span>
+            <span class="icon">
+              <!--#include virtual='/assets/images/about-optimized.svg' -->
+            </span>
+          </a>
+        </li>
+        <li class="nav-link" id="contact-menu">
+          <a href="javascript:void(0)">
+            <span class="text">Contact</span>
+            <span class="icon">
+              <!--#include virtual='/assets/images/contact-optimized.svg' -->
+            </span>
+          </a>
+          <ul class="submenu" id="contact-types-menu">
+            <li class="nav-link ext-link" id="contact-type-linkedin">
+              <a href="https://www.linkedin.com/in/manjitkarve" target="_blank">
+                <span class="text">LinkedIn</span>
+                <span class="icon">
+                  <!--#include virtual='/assets/images/linkedin-optimized.svg' -->
+                </span>
+              </a>
+            </li>
+            <li class="nav-link ext-link" id="contact-type-twitter">
+              <a href="https://www.twitter.com/laaltoofan" target="_blank">
+                <span class="text">@laaltoofan</span>
+                <span class="icon">
+                  <!--#include virtual='/assets/images/twitter-optimized.svg' -->
+                </span>
+              </a>
+            </li>
+            <li class="nav-link ext-link" id="contact-type-github">
+              <a href="https://github.com/manjitkarve" target="_blank">
+                <span class="text">GitHub</span>
+                <span class="icon">
+                  <!--#include virtual='/assets/images/github-optimized.svg' -->
+                </span>
+              </a>
+            </li>
+            <li class="nav-link ext-link" id="contact-type-email">
+              <a href="mailto:contact@manjitkarve.com">
+                <span class="text">contact@manjitkarve.com</span>
+                <span class="icon">
+                  <!--#include virtual='/assets/images/email-optimized.svg' -->
+                </span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li class="nav-link" id="blog-page">
+          <a href="javascript:void(0)">
+            <span class="text">Blog</span>
+            <span class="icon">
+              <!--#include virtual='/assets/images/blog-optimized.svg' -->
+            </span>
+          </a>
+        </li>
       </ul>
     </li>
   </ul>
