@@ -6,5 +6,9 @@
 <link rel="stylesheet" type="text/css" href="/assets/css/style.css" media="screen"/>
 <!-- <link rel="stylesheet" type="text/css" href="" /> -->
 
+<!--#if expr='v("pageName")=~/index/'-->
+  <script type="text/javascript" language="javascript" src="/assets/js/jss.min.js"></script>
+<!--#endif -->
+
 <script type="text/javascript" language="javascript" src="/assets/js/script.js"></script>
 <!--<script type="text/javascript" language="javascript" src=""></script>-->
