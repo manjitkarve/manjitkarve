@@ -1,6 +1,6 @@
-<nav> 
+<nav>
   <ul class="navigation-menu show">
-    <li class="nav-link" id="home-page">
+    <li class="nav-link l0" id="home-page">
       <a href="/">
         <span class="text">Home</span>
         <span class="icon">
@@ -8,7 +8,7 @@
         </span>
       </a>
       <ul class="navigation-menu show group" id="group1">
-        <li class="nav-link" id="portfoilio-page">
+        <li class="nav-link l1" id="portfoilio-page">
           <a href="javascript:void(0)">
             <span class="text">Portfolio</span>
             <span class="icon">
@@ -16,7 +16,7 @@
             </span>
           </a>
         </li>
-        <li class="nav-link" id="resume-page">
+        <li class="nav-link l1" id="resume-page">
           <a href="javascript:void(0)">
             <span class="text">Resume</span>
             <span class="icon">
@@ -24,7 +24,7 @@
             </span>
           </a>
         </li>
-        <li class="nav-link" id="services-page">
+        <li class="nav-link l1" id="services-page">
           <a href="javascript:void(0)">
             <span class="text">Services</span>
             <span class="icon">
@@ -32,17 +32,17 @@
             </span>
           </a>
           <ul class="submenu" id="services-menu">
-            <li class="nav-link" id="ux-design-page">
+            <li class="nav-link l2" id="ux-design-page">
               <a href="javascript:void(0)">
                 <span class="text only">UX Design</span>
               </a>
             </li>
-            <li class="nav-link" id="website-design-page">
+            <li class="nav-link l2" id="website-design-page">
               <a href="javascript:void(0)">
                 <span class="text only">Website Design</span>
               </a>
             </li>
-            <li class="nav-link" id="team-consulting-page">
+            <li class="nav-link l2" id="team-consulting-page">
               <a href="javascript:void(0)">
                 <span class="text only">Team Consulting</span>
               </a>
@@ -51,7 +51,7 @@
         </li>
       </ul>
       <ul class="navigation-menu show group" id="group2">
-        <li class="nav-link" id="about-page">
+        <li class="nav-link l1" id="about-page">
           <a href="javascript:void(0)">
             <span class="text">About</span>
             <span class="icon">
@@ -59,7 +59,7 @@
             </span>
           </a>
         </li>
-        <li class="nav-link" id="contact-menu">
+        <li class="nav-link l1" id="contact-menu">
           <a href="javascript:void(0)">
             <span class="text">Contact</span>
             <span class="icon">
@@ -67,7 +67,7 @@
             </span>
           </a>
           <ul class="submenu" id="contact-types-menu">
-            <li class="nav-link ext-link" id="contact-type-linkedin">
+            <li class="nav-link l2 ext-link" id="contact-type-linkedin">
               <a href="https://www.linkedin.com/in/manjitkarve" target="_blank">
                 <span class="text">LinkedIn</span>
                 <span class="icon">
@@ -75,7 +75,7 @@
                 </span>
               </a>
             </li>
-            <li class="nav-link ext-link" id="contact-type-twitter">
+            <li class="nav-link l2 ext-link" id="contact-type-twitter">
               <a href="https://www.twitter.com/laaltoofan" target="_blank">
                 <span class="text">@laaltoofan</span>
                 <span class="icon">
@@ -83,7 +83,7 @@
                 </span>
               </a>
             </li>
-            <li class="nav-link ext-link" id="contact-type-github">
+            <li class="nav-link l2 ext-link" id="contact-type-github">
               <a href="https://github.com/manjitkarve" target="_blank">
                 <span class="text">GitHub</span>
                 <span class="icon">
@@ -91,7 +91,7 @@
                 </span>
               </a>
             </li>
-            <li class="nav-link ext-link" id="contact-type-email">
+            <li class="nav-link l2 ext-link" id="contact-type-email">
               <a href="mailto:contact@manjitkarve.com">
                 <span class="text">contact@manjitkarve.com</span>
                 <span class="icon">
@@ -101,7 +101,7 @@
             </li>
           </ul>
         </li>
-        <li class="nav-link" id="blog-page">
+        <li class="nav-link l1" id="blog-page">
           <a href="javascript:void(0)">
             <span class="text">Blog</span>
             <span class="icon">
