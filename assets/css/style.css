@@ -12,58 +12,178 @@
 
 ------------------------------------------------------------- */
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,400italic);
-/* line 2, ../scss/_nav.scss */
+/* line 1, ../scss/_type.scss */
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+@media (max-width: 767px) {
+  /* line 1, ../scss/_type.scss */
+  body {
+    font-size: 10pt;
+  }
+}
+@media (min-width: 769px) and (max-width: 960px) {
+  /* line 1, ../scss/_type.scss */
+  body {
+    font-size: 12pt;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1367px) {
+  /* line 1, ../scss/_type.scss */
+  body {
+    font-size: 14pt;
+  }
+}
+
+@media (min-width: 1368px) {
+  /* line 1, ../scss/_type.scss */
+  body {
+    font-size: 16pt;
+  }
+}
+
+/* line 1, ../scss/_nav.scss */
+nav {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(31, 48, 56, 0.9);
+  padding: 10px 0;
+  border: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+/* line 9, ../scss/_nav.scss */
+nav ul, nav li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+/* line 11, ../scss/_mixins.scss */
+nav a, nav a:link, nav a:hover, nav a:visited, nav a:active {
+  color: #03A9F4;
+}
+/* line 15, ../scss/_nav.scss */
+nav a:hover {
+  color: #ff0a73;
+}
+/* line 16, ../scss/_nav.scss */
+nav a {
+  font-weight: 300;
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 0.8em;
+}
+/* line 24, ../scss/_nav.scss */
 nav .navigation-menu span.text {
   display: block;
 }
-/* line 3, ../scss/_nav.scss */
+/* line 25, ../scss/_nav.scss */
 nav .navigation-menu span.icon {
   display: none;
 }
-
-/* line 10, ../scss/_nav.scss */
-[page-name=index] nav {
+/* line 26, ../scss/_nav.scss */
+nav .navigation-menu .navigation-menu, nav .navigation-menu .submenu {
+  display: none;
+}
+/* line 27, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* line 31, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 > a {
+  order: 1;
+  flex-basis: 5%;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+/* line 33, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 > a span.text {
+  display: none;
+}
+/* line 34, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 > a span.icon {
+  display: block;
+}
+/* line 36, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 > a span.icon .bg-target {
+  fill: #ff0a73;
+}
+/* line 44, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 .group {
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: 45%;
+}
+/* line 49, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 .group > li {
+  margin: 10px 1.2em 10px;
+}
+/* line 52, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 .group#group1 {
+  order: 2;
+  justify-content: flex-end;
+}
+/* line 56, ../scss/_nav.scss */
+nav .navigation-menu .nav-link-list-item.l0 .group#group2 {
+  order: 0;
+}
+/* line 64, ../scss/_nav.scss */
+nav.flared {
+  position: absolute;
   width: 100%;
   height: 100%;
 }
-/* line 13, ../scss/_nav.scss */
-[page-name=index] nav ul, [page-name=index] nav li {
-  margin: 0;
-  padding: 0;
-}
-/* line 14, ../scss/_nav.scss */
-[page-name=index] nav > .navigation-menu {
+/* line 68, ../scss/_nav.scss */
+nav.flared .navigation-menu.l0 {
   position: relative;
 }
-/* line 15, ../scss/_nav.scss */
-[page-name=index] nav > .navigation-menu span.text {
-  display: none;
-}
-/* line 17, ../scss/_nav.scss */
-[page-name=index] nav > .navigation-menu span.text.only {
-  display: block;
-}
-/* line 21, ../scss/_nav.scss */
-[page-name=index] nav > .navigation-menu span.icon {
-  display: block;
-}
-/* line 24, ../scss/_nav.scss */
-[page-name=index] nav > .navigation-menu span.icon .bg-target {
-  fill: #03A9F4;
-}
-/* line 28, ../scss/_nav.scss */
-[page-name=index] nav > .navigation-menu span.icon .menu-icon:hover .bg-target, [page-name=index] nav > .navigation-menu span.icon #logo:hover .bg-target {
-  fill: #ff0a73;
-}
-/* line 34, ../scss/_nav.scss */
-[page-name=index] nav > .navigation-menu .nav-link a {
+/* line 72, ../scss/_nav.scss */
+nav.flared .navigation-menu span.text {
   display: block;
   position: absolute;
+  left: -10000px;
+  font-size: 1.8em;
+  font-weight: 100;
+  color: #03A9F4;
+}
+/* line 79, ../scss/_nav.scss */
+nav.flared .navigation-menu span.text.only {
+  display: block;
+}
+/* line 83, ../scss/_nav.scss */
+nav.flared .navigation-menu span.icon {
+  display: block;
+}
+/* line 85, ../scss/_nav.scss */
+nav.flared .navigation-menu span.icon .bg-target {
+  fill: #03A9F4;
+}
+/* line 89, ../scss/_nav.scss */
+nav.flared .navigation-menu span.icon .menu-icon:hover .bg-target, nav.flared .navigation-menu span.icon #logo:hover .bg-target {
+  fill: #ff0a73;
+}
+/* line 94, ../scss/_nav.scss */
+nav.flared .navigation-menu .nav-link-list-item {
+  position: absolute;
+  display: block;
+}
+/* line 98, ../scss/_nav.scss */
+nav.flared .navigation-menu .nav-link-list-item a {
+  display: block;
+  position: relative;
+}
+/* line 103, ../scss/_nav.scss */
+nav.flared .navigation-menu .nav-link-list-item a:hover span.text:hover {
+  color: #ff0a73;
 }
 
-/* line 8, ../scss/_header.scss */
-[page-name=index] header {
-  display: none;
+/* line 3, ../scss/_header.scss */
+header {
+  position: relative;
 }
 
 /* line 1, ../scss/_hex-bg.scss */
@@ -121,27 +241,59 @@ html, body, #page-container {
 }
 
 /* line 8, ../scss/_page.scss */
-body {
-  font-size: 4pt;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-
-/* line 13, ../scss/_page.scss */
 #page-container {
   margin: 0 auto;
   display: flex;
-  flex-direction: row-reverse;
-  flex-grow: 1;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
 }
-/* line 19, ../scss/_page.scss */
+@media (max-width: 320px) {
+  /* line 8, ../scss/_page.scss */
+  #page-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (min-width: 321px) and (max-width: 768px) {
+  /* line 8, ../scss/_page.scss */
+  #page-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 960px) {
+  /* line 8, ../scss/_page.scss */
+  #page-container {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 960px) and (max-width: 1367px) {
+  /* line 8, ../scss/_page.scss */
+  #page-container {
+    width: 100%;
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1368px) {
+  /* line 8, ../scss/_page.scss */
+  #page-container {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
+/* line 14, ../scss/_page.scss */
 #page-container > main {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 /* line 1, ../scss/_footer.scss */
 footer {
   display: none;
 }
+
+/*# sourceMappingURL=style.css.map */
