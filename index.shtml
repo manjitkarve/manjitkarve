@@ -7,7 +7,7 @@
 </head>
 <body page-name='<!--#echo  var="pageName" -->'>
 	<!--#include virtual="includes/bg.shtml" -->
-	<div id="page-container" page-name='<!--#echo  var="pageName" -->'>
+	<div id="page-container">
 		<header>
 			<!--#include virtual="includes/nav.shtml"-->
 		</header>

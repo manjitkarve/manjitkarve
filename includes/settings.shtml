@@ -1,3 +1,1 @@
-<!--#set var="pageName" value="$DOCUMENT_URI" -->
-<!--#if expr='v("DOCUMENT_URI") =~ /(\w*)(\.shtml)/ && $1 =~ /(\w*)/' --><!--#endif -->
-<!--#set var="pageName" value="$0" -->
+
