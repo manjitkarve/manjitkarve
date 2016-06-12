@@ -1,0 +1,15 @@
+body{
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  @include media("<tablet"){
+    font-size: 10pt;
+  }
+  @include media(">tablet", "<=laptop"){
+    font-size: 12pt;
+  }
+  @include media(">=laptop", "<desktop"){
+    font-size: 14pt;
+  }
+  @include media(">=desktop"){
+    font-size: 16pt;
+  }
+}
