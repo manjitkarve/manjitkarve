@@ -12,3 +12,26 @@
     color: $color;
   }
 }
+
+@mixin full-width(){
+  @include media("<=phone"){
+    width: 100%;
+    max-width: 100%;
+  }
+  @include media(">phone", "<=tablet"){
+    width: 100%;
+    max-width: 100%;
+  }
+  @include media(">tablet", "<=laptop"){
+    width: 100%;
+    max-width: 100%;
+  }
+  @include media(">=laptop", "<desktop"){
+    width: 100%;
+    max-width: map-get($breakpoints, "laptop");
+  }
+  @include media(">=desktop"){
+    width: 100%;
+    max-width: 1200px;
+  }
+}
