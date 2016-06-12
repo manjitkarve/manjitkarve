@@ -5,20 +5,14 @@ html, body, #page-container{
   box-sizing: content-box;
 }
 
-body{
-  font-size: 4pt;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-
 #page-container{
   margin: 0 auto;
   display: flex;
-  flex-direction: row-reverse;
-  flex-grow: 1;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: flex-start;
+  @include full-width();
   &>main{
     display: flex;
     flex-direction: column;
-    flex-grow: 1;
   }
 }

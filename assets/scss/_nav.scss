@@ -1,39 +1,110 @@
-nav .navigation-menu{
-  span.text{display: block;}
-  span.icon{
-    display: none;
-
-
-  }
-}
-
-[page-name=index] nav{
+nav{
   width: 100%;
   height: 100%;
-  ul, li{margin: 0; padding: 0;}
-  &>.navigation-menu{
-    span.text{
-      display: none;
-      &.only{
-        display: block;
-      }
-    }
-    span.icon{
-      display: block;
+  background-color: transparentize($primary-orth-dark, 0.1);
+  padding: 10px 0;
+  border: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  ul, li{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  @include link-color($primary-main);
+  a:hover{color: $secondary-main;}
+  a{
+    font-weight: 300;
+    text-decoration: none;
+    font-size: 1.5em;
+    line-height: 0.8em;
+  }
 
-      .bg-target{
-        fill: $primary-main;
+  .navigation-menu{
+    span.text{display: block;}
+    span.icon{display: none;}
+    .navigation-menu, .submenu{display: none;}
+    .nav-link-list-item.l0{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &>a{
+        order: 1;
+        span.text{display: none;}
+        span.icon{
+          display: block;
+          .bg-target{
+            fill: $secondary-main;
+          }
+        }
+        flex-basis: 5%;
+        flex-grow: 0;
+        flex-shrink: 0;
       }
-      .menu-icon:hover, #logo:hover{
-        .bg-target{
-          fill: $secondary-main;
+      .group{
+        display: flex;
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 45%;
+        &>li{
+          margin: 10px 1.2em 10px;
+        }
+        &#group1{
+          order: 2;
+          justify-content: flex-end;
+        }
+        &#group2{
+          order: 0;
         }
       }
+
     }
-    position: relative;
-    .nav-link a{
-      display: block;
-      position: absolute;
+  }
+
+  &.flared{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .navigation-menu.l0{
+      position: relative;
+    }
+    .navigation-menu{
+      span.text{
+        display: block;
+        position: absolute;
+        left: -10000px;
+        font-size: 1.8em;
+        font-weight: 100;
+        color: $primary-main;
+        &.only{
+          display: block;
+        }
+      }
+      span.icon{
+        display: block;
+        .bg-target{
+          fill: $primary-main;
+        }
+        .menu-icon:hover, #logo:hover{
+          .bg-target{
+            fill: $secondary-main;
+          }
+        }
+      }
+      .nav-link-list-item{
+        position: absolute;
+        display: block;
+      }
+      .nav-link-list-item a{
+        display: block;
+        position: relative;
+        &:hover span.text{
+
+          &:hover{
+            color: $secondary-main;
+          }
+        }
+      }
     }
   }
 }
