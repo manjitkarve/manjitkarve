@@ -14,15 +14,15 @@
 }
 
 @mixin full-width(){
-  @include media("<=phone"){
+  @include media("<=phone", "handheld", 'retina2x'){
     width: 100%;
     max-width: 100%;
   }
-  @include media(">phone", "<=tablet"){
+  @include media(">phone", "<=tablet", "handheld", "retina2x"){
     width: 100%;
     max-width: 100%;
   }
-  @include media(">tablet", "<=laptop"){
+  @include media(">tablet", "<=laptop", "handheld", "retina2x"){
     width: 100%;
     max-width: 100%;
   }
@@ -34,4 +34,6 @@
     width: 100%;
     max-width: 1200px;
   }
+  width: 100%;
+  max-width: map-get($breakpoints, "laptop");
 }

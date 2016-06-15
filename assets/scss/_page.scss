@@ -1,4 +1,5 @@
 @import "hex-bg";
+@import "lipsum";
 
 html, body, #page-container{
   @include fill-space;
@@ -11,6 +12,7 @@ html, body, #page-container{
   flex-direction: column;
   justify-content: flex-start;
   @include full-width();
+  height: 100%;
   &>main{
     display: flex;
     flex-direction: column;
