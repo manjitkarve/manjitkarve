@@ -57,13 +57,18 @@ function calculateMenuPositions(){
   };
   var height=document.querySelector("body").offsetHeight;var lh=height;
   var width=document.querySelector("body").offsetWidth;var lw=width;
+  var navOffset={
+    t:document.querySelector("nav").offsetParent.offsetTop,
+    l:document.querySelector("nav").offsetParent.offsetLeft
+  }
   if (width<height){
     lh=lw=width/3.5;
   } else {
     lw=lh=height/3.5;
   }
-  var ll=(width-lw)/2;
-  var lt=(height-lh)/2;
+  var ll=(width-lw)/2-navOffset.l;
+  var lt=(height-lh)/2-navOffset.t;
+
   coords.logo=cartesianSpace(ll, lt, lw, lh);
 
   var groups=document.querySelectorAll("nav .navigation-menu.group");
@@ -72,7 +77,7 @@ function calculateMenuPositions(){
   var distanceIncrement=1.1;
   var l1Radius=lw*distanceIncrement;
   var l2Radius=l1Radius*distanceIncrement;
-  var center={t: height/2, l: width/2};
+  var center={t: height/2-navOffset.t, l: width/2-navOffset.l};
   var reductionFactor=0.6;
   var step=reductionFactor*1.05;
   groups.forEach(function(group, i, groups){

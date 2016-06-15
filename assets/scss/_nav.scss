@@ -1,11 +1,7 @@
 nav{
   width: 100%;
   height: 100%;
-  background-color: transparentize($primary-orth-dark, 0.1);
-  padding: 10px 0;
   border: 0px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
   ul, li{
     margin: 0;
     padding: 0;
@@ -16,20 +12,15 @@ nav{
   a{
     font-weight: 300;
     text-decoration: none;
-    font-size: 1.5em;
-    line-height: 0.8em;
   }
+  #menu-trigger{display: none;}
 
   .navigation-menu{
     span.text{display: block;}
     span.icon{display: none;}
     .navigation-menu, .submenu{display: none;}
     .nav-link-list-item.l0{
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       &>a{
-        order: 1;
         span.text{display: none;}
         span.icon{
           display: block;
@@ -37,34 +28,69 @@ nav{
             fill: $secondary-main;
           }
         }
-        flex-basis: 5%;
-        flex-grow: 0;
-        flex-shrink: 0;
       }
       .group{
-        display: flex;
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 45%;
-        &>li{
-          margin: 10px 1.2em 10px;
-        }
-        &#group1{
-          order: 2;
-          justify-content: flex-end;
-        }
-        &#group2{
-          order: 0;
-        }
+        display: block;
       }
-
     }
   }
+  &.standard{
+    background-color: transparentize($primary-orth-dark, 0.1);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 10px 0;
+    a{
+      font-size: 1.5em;
+      line-height: 0.8em;
+      @include media(">=laptop", "<desktop"){
+        font-size: 1.3em;
+      }
+      @include media(">=desktop"){
+        font-size: 1.6em;
+      }
+    }
+    .navigation-menu{
+      .nav-link-list-item.l0{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &>a{
+          order: 1;
+          span.text{display: none;}
+          span.icon{
+            display: block;
+            .bg-target{
+              fill: $secondary-main;
+            }
+          }
+          flex-basis: 5%;
+          flex-grow: 0;
+          flex-shrink: 0;
+        }
+        .group{
+          display: flex;
+          flex-grow: 0;
+          flex-shrink: 0;
+          flex-basis: 45%;
+          &>li{
+            margin: 10px 1.2em 10px;
+          }
+          &#group1{
+            order: 2;
+            justify-content: flex-end;
+            margin-right: 1em;
+          }
+          &#group2{
+            order: 0;
+            margin-left: 1em;
+          }
+        }
 
+      }
+    }
+  }
   &.flared{
     position: absolute;
-    width: 100%;
-    height: 100%;
     .navigation-menu.l0{
       position: relative;
     }
