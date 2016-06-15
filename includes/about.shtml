@@ -1,0 +1,3 @@
+<div class="lipsum" lipsum-amount="5">
+  <!--#include virtual="lipsum.shtml" -->
+</div>
