@@ -18,3 +18,14 @@ html, body, #page-container{
     flex-direction: column;
   }
 }
+
+main{
+  margin: 1em 0 0;
+  background-color: rgba(31, 48, 56, 0.9);
+  padding: 0.5em 2.2em 0;
+  color: transparentize(white, 0.2);
+  flex-grow: 1;
+  flex-basis: 100%;
+  font-weight: 100;
+  overflow: auto;
+}
