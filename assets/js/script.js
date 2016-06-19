@@ -2,11 +2,14 @@ var menuStylesheet=null;
 
 document.addEventListener('DOMContentLoaded', function () {
   updateLevels();
-  reposition(calculateMenuPositions());
-  window.addEventListener('resize', function(){
+  if (document.querySelectorAll("nav.flared").length>0){
     reposition(calculateMenuPositions());
+  }
+  window.addEventListener('resize', function(){
+    if (document.querySelectorAll("nav.flared").length>0){
+      reposition(calculateMenuPositions());
+    }
   });
-
 
 });
 
