@@ -10,6 +10,34 @@ document.addEventListener('DOMContentLoaded', function () {
       reposition(calculateMenuPositions());
     }
   });
+  window.addEventListener("scroll", function(evt){
+    if (document.querySelector("nav.flared")){
+      return;
+    }
+    if (document.body.scrollTop>50){
+      document.querySelector("#page-container header nav").classList.add("minimized");
+    } else {
+      document.querySelector("#page-container header nav").classList.remove("minimized");
+    }
+  });
+  document.querySelector("#home-page>a").addEventListener("click", function(evt){
+    var nav=document.querySelector("#page-container header nav");
+    if (nav.classList.contains("flared")){
+      nav.classList.remove("flared");
+      document.querySelector("#page-container").classList.remove("navFlared");
+      if (document.body.scrollTop>50){
+        nav.classList.add("minimized", "standard");
+      } else {
+        nav.classList.add("standard");
+      }
+    } else {
+      nav.classList.remove("standard", "minimized");
+      nav.classList.add("flared");
+      document.querySelector("#page-container").classList.add("navFlared");
+      reposition(calculateMenuPositions());
+    }
+    evt.preventDefault();
+  });
 
 });
 
