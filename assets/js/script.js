@@ -2,6 +2,7 @@ var menuStylesheet=null;
 
 document.addEventListener('DOMContentLoaded', function () {
   updateLevels();
+  setScrollingInfo();
   if (document.querySelectorAll("nav.flared").length>0){
     reposition(calculateMenuPositions());
   }
@@ -11,20 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   });
   window.addEventListener("scroll", function(evt){
-    if (document.querySelector("nav.flared")){
-      return;
-    }
-    if (document.body.scrollTop>50){
-      document.querySelector("#page-container header nav").classList.add("minimized");
-    } else {
-      document.querySelector("#page-container header nav").classList.remove("minimized");
-    }
+    var nav=document.querySelector("#page-container header nav");
+    setScrollingInfo(nav);
   });
   document.querySelector("#home-page>a").addEventListener("click", function(evt){
+    evt.preventDefault();
     var nav=document.querySelector("#page-container header nav");
     if (nav.classList.contains("flared")){
       nav.classList.remove("flared");
-      document.querySelector("#page-container").classList.remove("navFlared");
+      document.querySelector("#page-container").classList.remove("animationEnded");
+      window.setTimeout(function(){
+        document.querySelector("#page-container").classList.remove("navFlared");
+      }, 50);
       if (document.body.scrollTop>50){
         nav.classList.add("minimized", "standard");
       } else {
@@ -34,12 +33,60 @@ document.addEventListener('DOMContentLoaded', function () {
       nav.classList.remove("standard", "minimized");
       nav.classList.add("flared");
       document.querySelector("#page-container").classList.add("navFlared");
+      window.setTimeout(function(){
+        document.querySelector("#page-container").classList.add("animationEnded");
+      }, 170);
       reposition(calculateMenuPositions());
     }
-    evt.preventDefault();
   });
 
 });
+
+function setScrollingInfo(nav){
+  var main=document.querySelector("#page-container main");
+  if (nav===null || typeof nav === "undefined"){
+    nav=document.querySelector("#page-container header nav");
+  }
+  var currentStatus=nav.getAttribute("currentScrollStatus");
+  if (typeof currentStatus === "undefined" || currentStatus === null || currentStatus.length === 0){
+    if (nav.classList.contains("flared")){
+      currentStatus="flared";
+    } else {
+      currentStatus="standard";
+    }
+  }
+
+  if (currentStatus === "flared"){
+    main.setAttribute("currentScrollStatus", currentStatus);
+    nav.setAttribute("currentScrollStatus", currentStatus);
+    return;
+  }
+
+  var newStatus = "";
+  var scrollTop=Math.max(document.body.scrollTop, document.querySelector("html").scrollTop);
+  if (scrollTop>50){
+    newStatus = "minimized";
+  } else if (scrollTop===0){
+    newStatus = "standard";
+  } else {
+    newStatus = "minimizing";
+  }
+
+  if (newStatus==="minimized"){
+    nav.classList.add("minimized");
+    nav.classList.remove("minimizing");
+    nav.removeAttribute("scrolling");
+  } else if (newStatus==="standard"){
+    nav.classList.remove("minimized", "minimizing");
+    nav.removeAttribute("scrolling");
+  } else if (newStatus==="minimizing"){
+    nav.classList.remove("minimized");
+    nav.classList.add("minimizing");
+    nav.setAttribute("scrolling", ""+document.body.scrollTop);
+  }
+  main.setAttribute("currentScrollStatus", newStatus);
+  nav.setAttribute("currentScrollStatus", newStatus);
+}
 
 function reposition(coords){
   jss.remove();
@@ -81,7 +128,6 @@ function reposition(coords){
 }
 
 function calculateMenuPositions(){
-  console.log("calculatingMenuPositions");
   var coords={
     logo: {},
     groups: {}
@@ -111,12 +157,16 @@ function calculateMenuPositions(){
   var center={t: height/2-navOffset.t, l: width/2-navOffset.l};
   var reductionFactor=0.6;
   var step=reductionFactor*1.05;
-  groups.forEach(function(group, i, groups){
+  for (var i=0; i<groups.length; i++){
+    //groups.forEach(function(group, i, groups)
+    var group=groups[i];
     coords.groups[group.getAttribute("Id")]={};
     mainStartAngle=mainStartAngle+delta*i;
     var links=group.querySelectorAll(".nav-link-list-item.l1");
     var linkStartAngle=mainStartAngle+step*(links.length-1)/2;
-    links.forEach(function(link, j, links){
+    for (var j=0; j<links.length; j++){
+    //links.forEach(function(link, j, links)
+    var link=links[j];
       var linkAngle=linkStartAngle-step*j;
       var space=cartesianSpace(0,0,0,0);
       var linkCenter={
@@ -169,11 +219,10 @@ function calculateMenuPositions(){
         coords.groups[group.getAttribute("Id")][link.getAttribute("Id")].submenu=submenuSpace;
       }
 
-    });
+    }
 
-  });
+  }
 
-  console.log(coords);
   return coords;
 
 }

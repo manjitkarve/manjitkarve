@@ -13,6 +13,7 @@ nav{
   a{
     font-weight: 300;
     text-decoration: none;
+    outline: none;
   }
   #menu-trigger{display: none;}
 
@@ -38,7 +39,7 @@ nav{
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     height: 2.6em;
-    padding: 0.4em 0 0.4em;
+    padding: 0.2em 0 0.4em;
     a{
       font-size: 1.5em;
       line-height: 0.8em;
@@ -86,10 +87,39 @@ nav{
       }
     }
   }
+  &.minimizing{
+    $nav-size-steps: 51;
+    //position: fixed;
+    @include full-width();
+    position: fixed;
+    background-color: $primary-orth-dark;
+    border-bottom: 1px solid lighten($primary-orth-dark, 5%);
+    border-radius: 0px;
+    @for $i from 1 through ($nav-size-steps){
+      $scrolled:$nav-size-steps - $i;
+      &[scrolling = "#{$scrolled}"]{
+        //height: #{$i}px;
+        font-size: .6em+$i*.008;
+        #home-page>a{
+          $logosize: 3%+$i*.04;
+          flex-basis: $logosize;
+          width: $logosize;
+        }
+      }
+    }
+  }
   &.minimized{
     position: fixed;
     @include full-width();
-    background-color: $primary-orth-main;
+    background-color: $primary-orth-dark;
+    border-bottom: 1px solid lighten($primary-orth-dark, 5%);
+    border-radius: 0px;
+    font-size: 0.6em;
+    #home-page>a{
+      $logosize: 3%;
+      flex-basis: $logosize;
+      width: $logosize;
+    }
   }
   &.flared{
     position: absolute;
