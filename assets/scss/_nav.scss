@@ -7,6 +7,7 @@ nav{
     margin: 0;
     padding: 0;
     list-style-type: none;
+    background-color: inherit;
   }
   @include link-color($primary-main);
   a:hover{color: $secondary-main;}
@@ -43,10 +44,10 @@ nav{
     a{
       font-size: 1.5em;
       line-height: 0.8em;
-      @include media(">=laptop", "<desktop"){
+      @include media(">=laptop", "<desktop") {
         font-size: 1.3em;
       }
-      @include media(">=desktop"){
+      @include media(">=desktop") {
         font-size: 1.6em;
       }
     }
@@ -86,6 +87,39 @@ nav{
         margin-left: 1rem;
       }
     }
+    /*.navigation-menu{
+      .submenu{
+        display: none;
+        font-size: 0.7em;
+        margin: 0;
+        position: absolute;
+        background-color: inherit;
+        padding: 0.5em 1em;
+        //margin-top: 1.3em;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        align-items: baseline;
+        background-color: $secondary-main;
+        @include link-color($primary-orth-dark);
+        right: -1em;
+        .nav-link-list-item{
+          margin: 0.5em 1em;
+        }
+      }
+      &.group1 .submenu{
+        right: -1em;
+      }
+      &.group>.nav-link-list-item{
+        position: relative;
+        &:hover, &.debughover{
+          border-bottom: 5px solid $secondary-main;
+          .submenu{
+            display: flex;
+          }
+        }
+      }
+    }*/
   }
   &.minimizing{
     $nav-size-steps: 51;

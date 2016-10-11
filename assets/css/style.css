@@ -86,86 +86,120 @@ nav ul, nav li {
   margin: 0;
   padding: 0;
   list-style-type: none;
+  background-color: inherit;
 }
 /* line 11, ../scss/_mixins.scss */
 nav a, nav a:link, nav a:hover, nav a:visited, nav a:active {
   color: #03A9F4;
 }
-/* line 12, ../scss/_nav.scss */
+/* line 13, ../scss/_nav.scss */
 nav a:hover {
   color: #ff0a73;
 }
-/* line 13, ../scss/_nav.scss */
+/* line 14, ../scss/_nav.scss */
 nav a {
   font-weight: 300;
   text-decoration: none;
   outline: none;
 }
-/* line 18, ../scss/_nav.scss */
+/* line 19, ../scss/_nav.scss */
 nav #menu-trigger {
   display: none;
 }
-/* line 21, ../scss/_nav.scss */
+/* line 22, ../scss/_nav.scss */
 nav .navigation-menu .navigation-menu, nav .navigation-menu .submenu {
   display: none;
 }
-/* line 23, ../scss/_nav.scss */
+/* line 24, ../scss/_nav.scss */
 nav span.text {
   display: block;
 }
-/* line 24, ../scss/_nav.scss */
+/* line 25, ../scss/_nav.scss */
 nav span.icon {
   display: none;
 }
-/* line 27, ../scss/_nav.scss */
+/* line 28, ../scss/_nav.scss */
 nav .nav-link-list-item.l0 > a span.text {
   display: none;
 }
-/* line 28, ../scss/_nav.scss */
+/* line 29, ../scss/_nav.scss */
 nav .nav-link-list-item.l0 > a span.icon {
   display: block;
 }
-/* line 30, ../scss/_nav.scss */
+/* line 31, ../scss/_nav.scss */
 nav .nav-link-list-item.l0 > a span.icon .bg-target {
   fill: #ff0a73;
 }
-/* line 33, ../scss/_nav.scss */
+/* line 34, ../scss/_nav.scss */
 nav .navigation-menu .group {
   display: block;
 }
-/* line 37, ../scss/_nav.scss */
+/* line 38, ../scss/_nav.scss */
 nav.standard {
   background-color: rgba(31, 48, 56, 0.9);
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   height: 2.6em;
   padding: 0.2em 0 0.4em;
+  /*.navigation-menu{
+    .submenu{
+      display: none;
+      font-size: 0.7em;
+      margin: 0;
+      position: absolute;
+      background-color: inherit;
+      padding: 0.5em 1em;
+      //margin-top: 1.3em;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      white-space: nowrap;
+      align-items: baseline;
+      background-color: $secondary-main;
+      @include link-color($primary-orth-dark);
+      right: -1em;
+      .nav-link-list-item{
+        margin: 0.5em 1em;
+      }
+    }
+    &.group1 .submenu{
+      right: -1em;
+    }
+    &.group>.nav-link-list-item{
+      position: relative;
+      &:hover, &.debughover{
+        border-bottom: 5px solid $secondary-main;
+        .submenu{
+          display: flex;
+        }
+      }
+    }
+  }*/
 }
-/* line 43, ../scss/_nav.scss */
+/* line 44, ../scss/_nav.scss */
 nav.standard a {
   font-size: 1.5em;
   line-height: 0.8em;
 }
 @media (min-width: 960px) and (max-width: 1367px) {
-  /* line 43, ../scss/_nav.scss */
+  /* line 44, ../scss/_nav.scss */
   nav.standard a {
     font-size: 1.3em;
   }
 }
 
 @media (min-width: 1368px) {
-  /* line 43, ../scss/_nav.scss */
+  /* line 44, ../scss/_nav.scss */
   nav.standard a {
     font-size: 1.6em;
   }
 }
-/* line 53, ../scss/_nav.scss */
+/* line 54, ../scss/_nav.scss */
 nav.standard .nav-link-list-item.l0 {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-/* line 57, ../scss/_nav.scss */
+/* line 58, ../scss/_nav.scss */
 nav.standard .nav-link-list-item.l0 > a {
   order: 1;
   display: block;
@@ -174,41 +208,41 @@ nav.standard .nav-link-list-item.l0 > a {
   flex-grow: 0;
   flex-shrink: 0;
 }
-/* line 64, ../scss/_nav.scss */
+/* line 65, ../scss/_nav.scss */
 nav.standard .nav-link-list-item.l0 > a span.text {
   display: none;
 }
-/* line 65, ../scss/_nav.scss */
+/* line 66, ../scss/_nav.scss */
 nav.standard .nav-link-list-item.l0 > a span.icon {
   display: block;
 }
-/* line 67, ../scss/_nav.scss */
+/* line 68, ../scss/_nav.scss */
 nav.standard .nav-link-list-item.l0 > a span.icon .bg-target {
   fill: #ff0a73;
 }
-/* line 71, ../scss/_nav.scss */
+/* line 72, ../scss/_nav.scss */
 nav.standard .group {
   display: flex;
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: 45%;
 }
-/* line 76, ../scss/_nav.scss */
+/* line 77, ../scss/_nav.scss */
 nav.standard .group > li {
   margin: 10px 1.2rem 10px;
 }
-/* line 79, ../scss/_nav.scss */
+/* line 80, ../scss/_nav.scss */
 nav.standard .group#group1 {
   order: 2;
   justify-content: flex-end;
   margin-right: 1rem;
 }
-/* line 84, ../scss/_nav.scss */
+/* line 85, ../scss/_nav.scss */
 nav.standard .group#group2 {
   order: 0;
   margin-left: 1rem;
 }
-/* line 90, ../scss/_nav.scss */
+/* line 124, ../scss/_nav.scss */
 nav.minimizing {
   width: 100%;
   max-width: 960px;
@@ -218,7 +252,7 @@ nav.minimizing {
   border-radius: 0px;
 }
 @media handheld and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), handheld and (max-width: 320px) and (min-resolution: 192dpi), handheld and (max-width: 320px) and (min-resolution: 2dppx) {
-  /* line 90, ../scss/_nav.scss */
+  /* line 124, ../scss/_nav.scss */
   nav.minimizing {
     width: 100%;
     max-width: 100%;
@@ -226,7 +260,7 @@ nav.minimizing {
 }
 
 @media handheld and (min-width: 321px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), handheld and (min-width: 321px) and (max-width: 768px) and (min-resolution: 192dpi), handheld and (min-width: 321px) and (max-width: 768px) and (min-resolution: 2dppx) {
-  /* line 90, ../scss/_nav.scss */
+  /* line 124, ../scss/_nav.scss */
   nav.minimizing {
     width: 100%;
     max-width: 100%;
@@ -234,7 +268,7 @@ nav.minimizing {
 }
 
 @media handheld and (min-width: 769px) and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 2), handheld and (min-width: 769px) and (max-width: 960px) and (min-resolution: 192dpi), handheld and (min-width: 769px) and (max-width: 960px) and (min-resolution: 2dppx) {
-  /* line 90, ../scss/_nav.scss */
+  /* line 124, ../scss/_nav.scss */
   nav.minimizing {
     width: 100%;
     max-width: 100%;
@@ -242,7 +276,7 @@ nav.minimizing {
 }
 
 @media (min-width: 960px) and (max-width: 1367px) {
-  /* line 90, ../scss/_nav.scss */
+  /* line 124, ../scss/_nav.scss */
   nav.minimizing {
     width: 100%;
     max-width: 960px;
@@ -250,472 +284,472 @@ nav.minimizing {
 }
 
 @media (min-width: 1368px) {
-  /* line 90, ../scss/_nav.scss */
+  /* line 124, ../scss/_nav.scss */
   nav.minimizing {
     width: 100%;
     max-width: 1200px;
   }
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="50"] {
   font-size: 0.608em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="50"] #home-page > a {
   flex-basis: 3.04%;
   width: 3.04%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="49"] {
   font-size: 0.616em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="49"] #home-page > a {
   flex-basis: 3.08%;
   width: 3.08%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="48"] {
   font-size: 0.624em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="48"] #home-page > a {
   flex-basis: 3.12%;
   width: 3.12%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="47"] {
   font-size: 0.632em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="47"] #home-page > a {
   flex-basis: 3.16%;
   width: 3.16%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="46"] {
   font-size: 0.64em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="46"] #home-page > a {
   flex-basis: 3.2%;
   width: 3.2%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="45"] {
   font-size: 0.648em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="45"] #home-page > a {
   flex-basis: 3.24%;
   width: 3.24%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="44"] {
   font-size: 0.656em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="44"] #home-page > a {
   flex-basis: 3.28%;
   width: 3.28%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="43"] {
   font-size: 0.664em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="43"] #home-page > a {
   flex-basis: 3.32%;
   width: 3.32%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="42"] {
   font-size: 0.672em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="42"] #home-page > a {
   flex-basis: 3.36%;
   width: 3.36%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="41"] {
   font-size: 0.68em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="41"] #home-page > a {
   flex-basis: 3.4%;
   width: 3.4%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="40"] {
   font-size: 0.688em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="40"] #home-page > a {
   flex-basis: 3.44%;
   width: 3.44%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="39"] {
   font-size: 0.696em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="39"] #home-page > a {
   flex-basis: 3.48%;
   width: 3.48%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="38"] {
   font-size: 0.704em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="38"] #home-page > a {
   flex-basis: 3.52%;
   width: 3.52%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="37"] {
   font-size: 0.712em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="37"] #home-page > a {
   flex-basis: 3.56%;
   width: 3.56%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="36"] {
   font-size: 0.72em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="36"] #home-page > a {
   flex-basis: 3.6%;
   width: 3.6%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="35"] {
   font-size: 0.728em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="35"] #home-page > a {
   flex-basis: 3.64%;
   width: 3.64%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="34"] {
   font-size: 0.736em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="34"] #home-page > a {
   flex-basis: 3.68%;
   width: 3.68%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="33"] {
   font-size: 0.744em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="33"] #home-page > a {
   flex-basis: 3.72%;
   width: 3.72%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="32"] {
   font-size: 0.752em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="32"] #home-page > a {
   flex-basis: 3.76%;
   width: 3.76%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="31"] {
   font-size: 0.76em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="31"] #home-page > a {
   flex-basis: 3.8%;
   width: 3.8%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="30"] {
   font-size: 0.768em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="30"] #home-page > a {
   flex-basis: 3.84%;
   width: 3.84%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="29"] {
   font-size: 0.776em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="29"] #home-page > a {
   flex-basis: 3.88%;
   width: 3.88%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="28"] {
   font-size: 0.784em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="28"] #home-page > a {
   flex-basis: 3.92%;
   width: 3.92%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="27"] {
   font-size: 0.792em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="27"] #home-page > a {
   flex-basis: 3.96%;
   width: 3.96%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="26"] {
   font-size: 0.8em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="26"] #home-page > a {
   flex-basis: 4%;
   width: 4%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="25"] {
   font-size: 0.808em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="25"] #home-page > a {
   flex-basis: 4.04%;
   width: 4.04%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="24"] {
   font-size: 0.816em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="24"] #home-page > a {
   flex-basis: 4.08%;
   width: 4.08%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="23"] {
   font-size: 0.824em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="23"] #home-page > a {
   flex-basis: 4.12%;
   width: 4.12%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="22"] {
   font-size: 0.832em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="22"] #home-page > a {
   flex-basis: 4.16%;
   width: 4.16%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="21"] {
   font-size: 0.84em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="21"] #home-page > a {
   flex-basis: 4.2%;
   width: 4.2%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="20"] {
   font-size: 0.848em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="20"] #home-page > a {
   flex-basis: 4.24%;
   width: 4.24%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="19"] {
   font-size: 0.856em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="19"] #home-page > a {
   flex-basis: 4.28%;
   width: 4.28%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="18"] {
   font-size: 0.864em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="18"] #home-page > a {
   flex-basis: 4.32%;
   width: 4.32%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="17"] {
   font-size: 0.872em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="17"] #home-page > a {
   flex-basis: 4.36%;
   width: 4.36%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="16"] {
   font-size: 0.88em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="16"] #home-page > a {
   flex-basis: 4.4%;
   width: 4.4%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="15"] {
   font-size: 0.888em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="15"] #home-page > a {
   flex-basis: 4.44%;
   width: 4.44%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="14"] {
   font-size: 0.896em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="14"] #home-page > a {
   flex-basis: 4.48%;
   width: 4.48%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="13"] {
   font-size: 0.904em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="13"] #home-page > a {
   flex-basis: 4.52%;
   width: 4.52%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="12"] {
   font-size: 0.912em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="12"] #home-page > a {
   flex-basis: 4.56%;
   width: 4.56%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="11"] {
   font-size: 0.92em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="11"] #home-page > a {
   flex-basis: 4.6%;
   width: 4.6%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="10"] {
   font-size: 0.928em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="10"] #home-page > a {
   flex-basis: 4.64%;
   width: 4.64%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="9"] {
   font-size: 0.936em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="9"] #home-page > a {
   flex-basis: 4.68%;
   width: 4.68%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="8"] {
   font-size: 0.944em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="8"] #home-page > a {
   flex-basis: 4.72%;
   width: 4.72%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="7"] {
   font-size: 0.952em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="7"] #home-page > a {
   flex-basis: 4.76%;
   width: 4.76%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="6"] {
   font-size: 0.96em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="6"] #home-page > a {
   flex-basis: 4.8%;
   width: 4.8%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="5"] {
   font-size: 0.968em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="5"] #home-page > a {
   flex-basis: 4.84%;
   width: 4.84%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="4"] {
   font-size: 0.976em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="4"] #home-page > a {
   flex-basis: 4.88%;
   width: 4.88%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="3"] {
   font-size: 0.984em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="3"] #home-page > a {
   flex-basis: 4.92%;
   width: 4.92%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="2"] {
   font-size: 0.992em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="2"] #home-page > a {
   flex-basis: 4.96%;
   width: 4.96%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="1"] {
   font-size: 1em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="1"] #home-page > a {
   flex-basis: 5%;
   width: 5%;
 }
-/* line 100, ../scss/_nav.scss */
+/* line 134, ../scss/_nav.scss */
 nav.minimizing[scrolling="0"] {
   font-size: 1.008em;
 }
-/* line 103, ../scss/_nav.scss */
+/* line 137, ../scss/_nav.scss */
 nav.minimizing[scrolling="0"] #home-page > a {
   flex-basis: 5.04%;
   width: 5.04%;
 }
-/* line 111, ../scss/_nav.scss */
+/* line 145, ../scss/_nav.scss */
 nav.minimized {
   position: fixed;
   width: 100%;
@@ -726,7 +760,7 @@ nav.minimized {
   font-size: 0.6em;
 }
 @media handheld and (max-width: 320px) and (-webkit-min-device-pixel-ratio: 2), handheld and (max-width: 320px) and (min-resolution: 192dpi), handheld and (max-width: 320px) and (min-resolution: 2dppx) {
-  /* line 111, ../scss/_nav.scss */
+  /* line 145, ../scss/_nav.scss */
   nav.minimized {
     width: 100%;
     max-width: 100%;
@@ -734,7 +768,7 @@ nav.minimized {
 }
 
 @media handheld and (min-width: 321px) and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), handheld and (min-width: 321px) and (max-width: 768px) and (min-resolution: 192dpi), handheld and (min-width: 321px) and (max-width: 768px) and (min-resolution: 2dppx) {
-  /* line 111, ../scss/_nav.scss */
+  /* line 145, ../scss/_nav.scss */
   nav.minimized {
     width: 100%;
     max-width: 100%;
@@ -742,7 +776,7 @@ nav.minimized {
 }
 
 @media handheld and (min-width: 769px) and (max-width: 960px) and (-webkit-min-device-pixel-ratio: 2), handheld and (min-width: 769px) and (max-width: 960px) and (min-resolution: 192dpi), handheld and (min-width: 769px) and (max-width: 960px) and (min-resolution: 2dppx) {
-  /* line 111, ../scss/_nav.scss */
+  /* line 145, ../scss/_nav.scss */
   nav.minimized {
     width: 100%;
     max-width: 100%;
@@ -750,7 +784,7 @@ nav.minimized {
 }
 
 @media (min-width: 960px) and (max-width: 1367px) {
-  /* line 111, ../scss/_nav.scss */
+  /* line 145, ../scss/_nav.scss */
   nav.minimized {
     width: 100%;
     max-width: 960px;
@@ -758,26 +792,26 @@ nav.minimized {
 }
 
 @media (min-width: 1368px) {
-  /* line 111, ../scss/_nav.scss */
+  /* line 145, ../scss/_nav.scss */
   nav.minimized {
     width: 100%;
     max-width: 1200px;
   }
 }
-/* line 118, ../scss/_nav.scss */
+/* line 152, ../scss/_nav.scss */
 nav.minimized #home-page > a {
   flex-basis: 3%;
   width: 3%;
 }
-/* line 124, ../scss/_nav.scss */
+/* line 158, ../scss/_nav.scss */
 nav.flared {
   position: absolute;
 }
-/* line 126, ../scss/_nav.scss */
+/* line 160, ../scss/_nav.scss */
 nav.flared .navigation-menu.l0 {
   position: relative;
 }
-/* line 130, ../scss/_nav.scss */
+/* line 164, ../scss/_nav.scss */
 nav.flared .navigation-menu span.text {
   display: block;
   position: absolute;
@@ -786,33 +820,33 @@ nav.flared .navigation-menu span.text {
   font-weight: 100;
   color: #03A9F4;
 }
-/* line 137, ../scss/_nav.scss */
+/* line 171, ../scss/_nav.scss */
 nav.flared .navigation-menu span.text.only {
   display: block;
 }
-/* line 141, ../scss/_nav.scss */
+/* line 175, ../scss/_nav.scss */
 nav.flared .navigation-menu span.icon {
   display: block;
 }
-/* line 143, ../scss/_nav.scss */
+/* line 177, ../scss/_nav.scss */
 nav.flared .navigation-menu span.icon .bg-target {
   fill: #03A9F4;
 }
-/* line 147, ../scss/_nav.scss */
+/* line 181, ../scss/_nav.scss */
 nav.flared .navigation-menu span.icon .menu-icon:hover .bg-target, nav.flared .navigation-menu span.icon #logo:hover .bg-target {
   fill: #ff0a73;
 }
-/* line 152, ../scss/_nav.scss */
+/* line 186, ../scss/_nav.scss */
 nav.flared .navigation-menu .nav-link-list-item {
   position: absolute;
   display: block;
 }
-/* line 156, ../scss/_nav.scss */
+/* line 190, ../scss/_nav.scss */
 nav.flared .navigation-menu .nav-link-list-item a {
   display: block;
   position: relative;
 }
-/* line 161, ../scss/_nav.scss */
+/* line 195, ../scss/_nav.scss */
 nav.flared .navigation-menu .nav-link-list-item a:hover span.text:hover {
   color: #ff0a73;
 }

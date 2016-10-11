@@ -97,12 +97,6 @@ function reposition(coords){
     "width": coords.logo.w+"px",
     "height": coords.logo.h+"px"
   });
-  /*jss.set("#home-page", {
-    "top": coords.logo.t+"px",
-    "left": coords.logo.l+"px",
-    "width": coords.logo.w+"px",
-    "height": coords.logo.h+"px"
-  });*/
   for (var group in coords.groups) {
     for (var link in coords.groups[group]){
       jss.set(".flared #"+link, {
